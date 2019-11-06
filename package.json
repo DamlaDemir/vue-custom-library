@@ -1,0 +1,35 @@
+{
+  "private": false,
+  "name": "vue-custom-library",
+  "version": "1.0.0",
+  "description": "This isn't particularly useful, it's used as a demo for how to publish Vue multi components to NPM!  ",
+  "main": "./dist/CustomLibrary.umd.js",
+  "unpkg": "dist/CustomLibrary.umd.min.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:npm": "vue-cli-service build --target lib --name index src/CustomLibrary.js"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamlaDemir/vue-custom-library.git"
+  },
+  "author": "Damla Demir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DamlaDemir/vue-custom-library/issues"
+  },
+  "homepage": "https://github.com/DamlaDemir/vue-custom-library#readme",
+  "dependencies": {
+    "@vue/cli-service": "^4.0.5",
+    "moment": "^2.24.0",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2"
+  }
+}
